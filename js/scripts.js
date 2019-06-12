@@ -5,8 +5,8 @@ $(document).ready(function() {
     var year = parseInt( $("input#year").val() );
     var isLeapYear = leapYear(year);
 
+    $("#result").show();
     $(".year").text(year);
-
     if (isLeapYear) {
       $(".not").hide();
     } else {
